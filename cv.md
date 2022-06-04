@@ -1,4 +1,4 @@
-1.	Yllia
+1.	Yllia.
 2.	Contacts:
 o	email: Yllia_vladimirovna@mail.ru
 o	GitHub: Liaaaaaaaaaaa
