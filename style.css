@@ -15,13 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    Font:normal normal normal 18px/1.5 Joan, sans-serif;
-    color:black;
+    Font: normal normal normal 18px/1.5 Joan, sans-serif;
+    color: black;
 }
 
 .border-main-header {
     position: relative;
-    background-color: #800000;
+    background-color: #800154;
     letter-spacing: 2px;
 }
 
@@ -35,8 +35,9 @@ body {
     display: flex;
     justify-content: space-between;
     height: 90px;
-    background-color: #800000;
+    background-color: #800154;
     width: 1440px;
+    color: #ffffff;
 }
 
 .link {
@@ -77,21 +78,6 @@ body {
     Font-weight: 700;
 }
 
-.footer-list {
-    width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-}
-
-.footer-link {
-    margin: 0 50px;
-    transition: .3s;
-    Font-weight: 700;
-    font-size: 20px;
-    display: flex;
-}
 
 .github-logo {
     display: flex;
@@ -99,7 +85,7 @@ body {
     align-items: center;
     width: 180px;
     height: 90px;
-    
+
 }
 
 .section {
@@ -119,7 +105,27 @@ body {
 .section-title {
     Font: normal normal bold 25px/1.5 Joan, sans-serif;
     letter-spacing: 1px;
-    color: black;
+    /* color: black; */
+    animation: color-change 7s infinite;
+    transition: all 5s;
+    transition-duration: 10s
+}
+
+.profile_photo {
+    position: relative;
+    background: url("./assets/img/IMG_6812.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    border: 5px double #800154;
+}
+
+.profile__name {
+    position: absolute;
+    font-size: 30px;
+     top: 80%;
+    right: 0;
+    font-weight: 600;
 }
 
 .code-example {
@@ -135,8 +141,42 @@ body {
     color: #808000;
 }
 
+.footer-list {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-link {
+    margin: 0 50px;
+    transition: .3s;
+    Font-weight: 700;
+    font-size: 20px;
+    display: flex;
+ fill:#ffffff;
+    /* background: #000000; */
+    /* color: #ffffff; */
+}
+
+.footer__year {
+    color: #000000;
+    font-size: 30px;
+}
+
 @media (max-width:768px) {
     .section {
         width: 100%;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: #54344b;
+    }
+
+    100% {
+        color: #800154;
     }
 }
