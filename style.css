@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+ul, li {
+    margin: 0;
+}
+
 li {
    list-style: none;
 }
@@ -36,9 +40,8 @@ body {
 .border-main-footer {
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    /* height: 90px; */
     background-color: #800154;
-    width: 1440px;
     color: #ffffff;
 }
 
@@ -86,8 +89,7 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 180px;
-    height: 90px;
-
+    /* height: 90px; */
 }
 
 .section {
@@ -115,11 +117,11 @@ body {
 
 .profile_photo {
     position: relative;
-    background: url("./assets/img/IMG_6812.jpg");
+    /* background: url("./assets/img/IMG_6812.jpg"); */
     width: 200px;
     height: 200px;
-    background-size: 100%;
-    border: 5px double #800154;
+    /* background-size: 100%; */
+    /* border: 5px double #800154; */
 }
 
 .profile__name {
@@ -152,7 +154,7 @@ body {
 }
 
 .footer-link {
-    margin: 0 50px;
+    margin: 0 ;
     transition: .3s;
     Font-weight: 700;
     font-size: 20px;
